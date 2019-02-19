@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1 #{title}
+  ul.list-group
+    each article, i in articles
+      li.list-group-item
+        a(href="/articles/"+article._id)= article.title
+  section
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+  section
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
+    div(class="youKnowIt")
+      img(src="photo.jpg" alt="firstimage")
